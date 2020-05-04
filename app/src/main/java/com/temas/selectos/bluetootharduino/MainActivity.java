@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
     private String direccion;
     private BluetoothAdapter btAdaptador;
     private BluetoothSocket btSocket=null;
-    //private static final UUID btUUID=UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
-    private static final UUID btUUID=UUID.randomUUID();
+    private static final UUID btUUID=UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
+    //private static final UUID btUUID=UUID.randomUUID();
     final int handlerState=0;
     private Handler hBTcomunica;
     private Switch swPrendeApaga;
@@ -70,10 +70,11 @@ public class MainActivity extends AppCompatActivity {
         }
         try {
             btSocket.connect();
+
         } catch (IOException e) {
             Log.d("ErrorContect","Error de conexión: " +e.toString());
             e.printStackTrace();
-            Toast.makeText(getApplicationContext(),"Error al conectar con dispositivo",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"Error al conectar con dispositivo" ,Toast.LENGTH_LONG).show();
 
             try {
                 btSocket.close();
@@ -128,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }
- */
+*/
         public void write(String input)  {
 
             try {
