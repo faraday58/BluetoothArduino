@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    //Comunicación con Blutooth por medio del protocolo serie
+    //Comunicación con Bluetooth por medio del protocolo serie
     private class ComunicaThread extends Thread{
         private  InputStream minputStream;
         private  OutputStream moutputStream;
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("eSocket","Error: " +e.toString());
             }
         }
-
+/*
         public void run(){
             byte[] buffer= new byte[256];
             int bytes=0;
@@ -128,6 +128,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }
+ */
         public void write(String input)  {
 
             try {
