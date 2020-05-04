@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BluetoothArduino</string>
+    <string name="str_direccion_dispositivo">macAddress</string>
+</resources>
