@@ -22,5 +22,12 @@
         android:id="@+id/swPrendeApaga"
         android:layout_gravity="center"
         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvDato"
+        android:textSize="30sp"
+        android:text="Dato recibido: "
+        />
 
 </LinearLayout>
